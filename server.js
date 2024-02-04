@@ -40,7 +40,7 @@ app.get("/vitals", async (request, response) => {
   }
 
   if (count == vitals_x.length) {
-    response.send(200);
+    response.sendStatus(200);
   }
 });
 
@@ -59,7 +59,7 @@ app.get("/ecg", async (request, response) => {
     }
   }
   if (count == ecg_x.length) {
-    response.send(200);
+    response.sendStatus(200);
   }
 });
 
