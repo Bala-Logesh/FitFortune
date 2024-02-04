@@ -1,0 +1,6 @@
+sleep_hours
+spo2_levels
+heart_rates
+temperatures
+breathing_rates
+vo2_max_scores

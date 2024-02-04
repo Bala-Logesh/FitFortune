@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FitFortune</title>
+  </head>
+  <body class="container">
+    <nav class="navbar">
+      <ul>
+        <li class="title">FitFortune</li>
+        <li>Welcome, User</li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h1>
+        We have collected data from your wearable for
+        <span id="days">20</span> days and stored it in our secure database!!
+      </h1>
+      <h3>Processing your data using our Machine Learning Models....</h3>
+
+      <a id="results" class="hidden" href="result.html">View my scores!!!!</a>
+    </div>
+
+    <script>
+      const results = document.querySelector("#results");
+      console.log(results);
+      setTimeout(() => {
+        results.classList.remove("hidden");
+      }, 5000);
+    </script>
+  </body>
+</html>
